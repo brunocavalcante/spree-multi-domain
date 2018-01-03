@@ -57,9 +57,5 @@ module SpreeMultiDomain
         alias_method_chain :current_order, :multi_domain
       end
     end
-
-    initializer 'spree.promo.register.promotions.rules' do |app|
-      app.config.spree.promotions.rules << Spree::Promotion::Rules::Store
-    end
   end
 end
