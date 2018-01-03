@@ -58,8 +58,5 @@ module SpreeMultiDomain
       end
     end
 
-    initializer 'spree.promo.register.promotions.rules' do |app|
-      app.config.spree.promotions.rules << Spree::Promotion::Rules::Store
-    end
   end
 end
